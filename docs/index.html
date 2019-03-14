@@ -8,7 +8,7 @@
         <meta name="description" content="Description">
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-            <link rel="stylesheet" href="./public/vue.css">
+        <link rel="stylesheet" href="./public/vue.css">
     </head>
 
     <body>
@@ -17,10 +17,15 @@
             window.$docsify = {
                 name: '廖雪峰python教程',
                 repo: 'https://github.com/q2578443177/python-doc',
-                coverpage:true,
+                coverpage: true,
                 loadSidebar: true,
+                auto2top: true,
                 subMaxLevel: 2,
-                search : [
+                homepage: 'page/Python-tutorial/README.md',
+                alias: {
+                    '/.*/_sidebar.md': '/_sidebar.md'
+                },
+                search: [
                     '/',            // => /README.md
                 ],
 
